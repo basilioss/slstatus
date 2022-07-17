@@ -4,3 +4,5 @@
 (e.g. dwm) or stdin to fill the status bar.
 
 ![image](https://user-images.githubusercontent.com/71596800/179395192-cae28548-2451-4b67-820c-e72e4825b9b8.png)
+
+Nerd font set in a window manager is required to corectly display the icons.

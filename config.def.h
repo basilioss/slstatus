@@ -72,5 +72,5 @@ static const struct arg args[] = {
     { run_command, "%s ", "sb-internet" },
 	{ run_command, "%s  ", "sb-battery" },
 	{ run_command, "%s  ", "sb-volume" },
-    { datetime, "%s", " %D   %H:%M " },
+    { datetime, "%s", " %d/%m/%y   %H:%M " },
 };

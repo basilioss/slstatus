@@ -65,11 +65,10 @@ static const char unknown_str[] = "n/a";
  */
 
 static const struct arg args[] = {
-    /* Scripts are located in ~/.local/bin */
-    /* https://github.com/basilioss/dotfiles */
     /* function format          argument */
-    { run_command, "%s ", "sb-internet" },
-	{ run_command, "%s  ", "sb-battery" },
-	{ run_command, "%s  ", "sb-volume" },
-    { datetime, "%s", " %d/%m/%y   %H:%M " },
+    { run_command, "%s  ", "sb-internet" },
+    { run_command, "%s  ", "sb-battery" },
+    { run_command, "%s  ", "sb-volume" },
+    { datetime, "%s  ", " %d/%m/%y" },
+    { datetime, "%s ", " %H:%M" },
 };

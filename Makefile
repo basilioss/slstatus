@@ -62,7 +62,15 @@ install: all
 	mkdir -p "$(DESTDIR)$(MANPREFIX)/man1"
 	cp -f slstatus.1 "$(DESTDIR)$(MANPREFIX)/man1"
 	chmod 644 "$(DESTDIR)$(MANPREFIX)/man1/slstatus.1"
+	cp -f commands/sb-battery "$(DESTDIR)$(PREFIX)/bin"
+	chmod 755 "$(DESTDIR)$(PREFIX)/bin/sb-battery"
+	cp -f commands/sb-volume "$(DESTDIR)$(PREFIX)/bin"
+	chmod 755 "$(DESTDIR)$(PREFIX)/bin/sb-volume"
+	cp -f commands/sb-internet "$(DESTDIR)$(PREFIX)/bin"
 
 uninstall:
 	rm -f "$(DESTDIR)$(PREFIX)/bin/slstatus"
 	rm -f "$(DESTDIR)$(MANPREFIX)/man1/slstatus.1"
+	rm -f "$(DESTDIR)$(PREFIX)/bin/sb-battery"
+	rm -f "$(DESTDIR)$(PREFIX)/bin/sb-volume"
+	rm -f "$(DESTDIR)$(PREFIX)/bin/sb-internet"
